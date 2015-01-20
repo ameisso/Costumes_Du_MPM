@@ -71,11 +71,22 @@ void program1AtStep(int step)//NAISSANCE
         timeOFBirth -= 800;
         programStartDate = millis();
       }
-      else if (timeOFBirth <= 2000 && timeOFBirth > 0)
+      else if (timeOFBirth <= 2000 && timeOFBirth > 150)
       {
         setColorForAllPixels(COSTUME_COLOR, 0);
         timeOFBirth -= 100;
         programStartDate = millis();
+      }
+      else if (timeOFBirth <= 150 && timeOFBirth > 0000)
+      {
+        Serial.println(step);
+        timeOFBirth -= 10;
+        setColorForAllPixels(COSTUME_COLOR, 0);
+        delay (3); 
+        setColorForAllPixels(COSTUME_COLOR, 255);
+        delay(5);
+        programStartDate = millis();
+
       }
     }
     else
@@ -89,6 +100,8 @@ void program1AtStep(int step)//NAISSANCE
 
 
 //jaune//OKs
+
+
 
 
 

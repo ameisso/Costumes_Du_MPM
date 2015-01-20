@@ -77,7 +77,7 @@ void setup()
 
   initSequence();
   Serial.println("init OK 178");
-  startProgram4();
+  startProgram2();
 }
 
 void loop()                     
@@ -95,15 +95,19 @@ void loop()
       startProgram1();
       break;
     case 2:
+      firstprogrmaphaseEnded = false;
       startProgram2();
       break;
     case 3:
+      firstprogrmaphaseEnded = false;
       startProgram3();
       break;
     case 4:
+      firstprogrmaphaseEnded = false;
       startProgram4();
       break;
     case 5:
+      firstprogrmaphaseEnded = false;
       startProgram5();
       break;
     case -1:
@@ -113,6 +117,7 @@ void loop()
   }
   continueOnSelectedProgram();
 }
+
 
 
 

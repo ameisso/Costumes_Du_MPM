@@ -2,7 +2,7 @@ void program4AtStep(int step)//4)
 {
   //Sequence alumage court metrage 
   //fixe full blanc 
-   if (step < 3000)//allumage blanc
+  if (step < 3000)//allumage blanc
   {
     if( step < 450)
     {
@@ -264,9 +264,29 @@ void program4AtStep(int step)//4)
     //Serial.println("white"+String(step));
   }
   FastLED.show();
+  if (step >= 3000)
+  {
+    uint8_t hue = 160;//equivalent de navy
+    if (step >= 3500 && step < 6000)
+    {
+      setColorForAllPixels(CHSV(hue, map(step,3500,6000,0,255), 255),255);
+    }
+    else if (step >= 9000 && step < 15000)
+    {
+      setColorForAllPixels(CHSV(hue, map(step,9000,15000,255,0), 255),255);
+    }
+    if (step > 29500)
+    {
+      programStartDate = millis()-3000;
+    }
+  }
 }
 
 
 //bleu
+
+
+
+
 
 

@@ -5,8 +5,7 @@ void program3AtStep(int step)//RENCONTRE
   uint8_t hueStart = 0; 
   uint8_t hueEnd = 165;//couleur premier costume 
   uint8_t hueOtherColor = 128;//couleur premier costume voir https://github.com/FastLED/FastLED/wiki/FastLED-HSV-Colors
-  //Serial.println(step);
-  //Serial.println(String(step)+" "+String(startTime)+" "+String(endTime));
+
   if(step < 3000)
   {
     setColorForAllPixels(COSTUME_COLOR,step/3000.0*255);
@@ -19,7 +18,6 @@ void program3AtStep(int step)//RENCONTRE
   {
     setColorForAllPixels(CHSV(map(step,6500,9500,hueStart,hueOtherColor), 255, 255),map(step,6500,9500,0,255));
   }
-
   else if (step >= 12000 && step < 16000)
   {
     setColorForAllPixels(CHSV(map(step,12000,16000,hueOtherColor,hueEnd), 255, 255),255);
@@ -28,7 +26,6 @@ void program3AtStep(int step)//RENCONTRE
   {
     setColorForAllPixels(CHSV(map(step,16000,20000,hueEnd,hueOtherColor), 255, 255),255);
   }
-
   else if (step >= 30000 && step < 34000)
   {
     setColorForAllPixels(CHSV(map(step,30000,34000,hueOtherColor,hueEnd), 255, 255),255);
@@ -37,7 +34,6 @@ void program3AtStep(int step)//RENCONTRE
   {
     setColorForAllPixels(CHSV(map(step,50000,54000,hueEnd,hueOtherColor), 255, 255),255);
   }
-
   else if (step >= 80000 && step < 84000)
   {
     setColorForAllPixels(CHSV(map(step,80000,84000,hueOtherColor,hueEnd), 255, 255),255);
@@ -46,22 +42,20 @@ void program3AtStep(int step)//RENCONTRE
   {
     setColorForAllPixels(CHSV(map(step,100000,104000,hueEnd,hueOtherColor), 255, 255),255);
   }
-
   else if (step >= 130000 && step < 134000)
   {
     setColorForAllPixels(CHSV(map(step,80000,84000,hueOtherColor,hueEnd), 255, 255),255);
   }
-  else if (step >= 160 && step < 164)
+  else if (step >= 160000 && step < 164000)
   {
     setColorForAllPixels(CHSV(map(step,100000,104000,hueEnd,hueOtherColor), 255, 255),255);
   }
-
   //toutes les 20 secondes pendant une minute 
 }
 
 
 
-//vert
+//vert//OK
 
 
 

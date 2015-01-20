@@ -22,7 +22,7 @@ void program1AtStep(int step)//NAISSANCE
     FastLED.show();
     delay (random(100,250));//vitesse du clignotement
 
-    if(random(20) == 0)
+    if(random(15) == 0)
     {
       setColorForAllPixels(CRGB::Black,255);
       delay (random(1000,1500));//fréquences des noirs 

@@ -47,7 +47,8 @@ int selectedIndexInPalette = 0;
 int lastButtonPressed = 0;
 int breatheVariable = 50; 
 int breatheDuration = 300;
-
+int startTime = 10000; 
+int endTime = 14000;
 
 boolean firstprogrmaphaseEnded =false; 
 boolean isBreatheAscending = true;
@@ -77,7 +78,7 @@ void setup()
 
   initSequence();
   Serial.println("init OK 178");
-  startProgram2();
+  startProgram3();
 }
 
 void loop()                     
@@ -117,6 +118,7 @@ void loop()
   }
   continueOnSelectedProgram();
 }
+
 
 
 

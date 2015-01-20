@@ -1,4 +1,4 @@
-#define COSTUME_COLOR CRGB::Orange
+#define COSTUME_COLOR CRGB::DarkOrange
 
 #define STATUS_LED 13
 #define RIB_LEDS_MAX_INTENSITY 50

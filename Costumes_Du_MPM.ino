@@ -1,4 +1,4 @@
-#define COSTUME_COLOR CRGB::Red
+#define COSTUME_COLOR CRGB::Orange
 
 #define STATUS_LED 13
 #define RIB_LEDS_MAX_INTENSITY 50
@@ -78,7 +78,6 @@ void setup()
 
   initSequence();
   Serial.println("init OK 178");
-  startProgram3();
 }
 
 void loop()                     

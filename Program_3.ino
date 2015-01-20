@@ -3,8 +3,8 @@ void program3AtStep(int step)//RENCONTRE
   //une respiration rouge une deuxieme qui reste bloquée 
   //fondu bleu 
   uint8_t hueStart = 0; 
-  uint8_t hueEnd = 165;//couleur premier costume 
-  uint8_t hueOtherColor = 128;//couleur premier costume voir https://github.com/FastLED/FastLED/wiki/FastLED-HSV-Colors
+  uint8_t hueEnd = 160;//couleur premier costume 
+  uint8_t hueOtherColor = 125;//couleur premier costume voir https://github.com/FastLED/FastLED/wiki/FastLED-HSV-Colors
 
   if(step < 3000)
   {

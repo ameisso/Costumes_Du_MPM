@@ -20,12 +20,12 @@ void program1AtStep(int step)//NAISSANCE
     setColorForLeftRib(COSTUME_COLOR, random(NUM_RIBS));
     setColorForRightRib(COSTUME_COLOR, random(NUM_RIBS));
     FastLED.show();
-    delay (random(100,250));
+    delay (random(100,250));//vitesse du clignotement
 
     if(random(20) == 0)
     {
       setColorForAllPixels(CRGB::Black,255);
-      delay (random(1000,1500));
+      delay (random(1000,1500));//fréquences des noirs 
     }
   }
   if (step >= 30000 && step < 40000 && !firstprogrmaphaseEnded)

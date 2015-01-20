@@ -1,41 +1,22 @@
 void program2AtStep(int step)//RESPIRATION 
 {
-  if  (breatheVariable < 20 || breatheVariable>150)
+  Serial.println(step);
+  if(step < 3000)
   {
-    isBreatheAscending = !isBreatheAscending; 
+    setColorForAllPixels(COSTUME_COLOR,map(step,0,3000,0,255));
   }
-
-  if(isBreatheAscending)
+  else if (step >= 3000 && step < 6000)
   {
-    breatheVariable += 5;
-    FastLED.setBrightness( breatheVariable );
-    setColorForAllPixels(COSTUME_COLOR);
+    setColorForAllPixels(COSTUME_COLOR, map(step,3000,6000,255,0));
+    if (step > 5900)
+    {
+      delay(500);
+      programStartDate = millis();
+    }
   }
-  else
-  {
-    breatheVariable -= 10;
-    FastLED.setBrightness( breatheVariable );
-    setColorForAllPixels(COSTUME_COLOR);
-  }
-  delay (100);//vitesse du breathe
 }
 
 //rouge
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

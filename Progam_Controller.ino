@@ -9,74 +9,35 @@ void startProgram2()
 {
   currentProgram = 2;
   breatheVariable = 50; 
-  breatheDuration = 300;
+  firstprogrmaphaseEnded = false;
   programStartDate = millis();
   FastLED.setBrightness( 255 );
 }
 void startProgram3()
 {
   currentProgram = 3;
-  breatheVariable = 50; 
-  breatheDuration = 300;
+  firstprogrmaphaseEnded = false;
   programStartDate = millis();
   FastLED.setBrightness( 255 );
 }
 void startProgram4()
 {
   currentProgram = 4;
+  firstprogrmaphaseEnded = false;
   programStartDate = millis();
   FastLED.setBrightness( 255 );
 }
 void startProgram5()
 {
   currentProgram = 5;
+  firstprogrmaphaseEnded = false;
   programStartDate = millis();
   FastLED.setBrightness( 255 );
 }
 void startProgram6()
 {
   currentProgram = 6;
-  programStartDate = millis();
-  FastLED.setBrightness( 255 );
-}
-void startProgram7()
-{
-  currentProgram = 7;
-  programStartDate = millis();
-  FastLED.setBrightness( 255 );
-}
-
-void startProgram8()
-{
-  currentProgram = 8;
-  programStartDate = millis();
-  FastLED.setBrightness( 255 );
-}
-
-void startProgram9()
-{
-  currentProgram = 9;
-  programStartDate = millis();
-  FastLED.setBrightness( 255 );
-}
-
-void startProgram10()
-{
-  currentProgram = 10;
-  programStartDate = millis();
-  FastLED.setBrightness( 255 );
-}
-
-void startProgram11()
-{
-  currentProgram = 11;
-  programStartDate = millis();
-  FastLED.setBrightness( 255 );
-}
-
-void startProgram12()
-{
-  currentProgram = 12;
+  firstprogrmaphaseEnded = false;
   programStartDate = millis();
   FastLED.setBrightness( 255 );
 }
@@ -140,6 +101,7 @@ int getButtonPressed()
     return -1;
   }
 }
+
 
 
 

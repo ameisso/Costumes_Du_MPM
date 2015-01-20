@@ -1,4 +1,4 @@
-void program3AtStep(int step)//RENCONTRE
+void program3AtStep(int step)//RENCONTRE 
 {
   //une respiration rouge une deuxieme qui reste bloquée 
   //fondu bleu 
